@@ -82,6 +82,10 @@ PRODUCT_PACKAGES += \
     f2fs_io \
     check_f2fs
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-impl.recovery
+
 # Overlays
 PRODUCT_PACKAGES += \
     ApertureResXun \
