@@ -44,9 +44,6 @@ SOONG_CONFIG_NAMESPACES += ufsbsg
 SOONG_CONFIG_ufsbsg += ufsframework
 SOONG_CONFIG_ufsbsg_ufsframework := bsg
 
-# Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
-
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := bengal
 TARGET_NO_BOOTLOADER := true
