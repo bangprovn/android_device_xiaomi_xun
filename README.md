@@ -1,24 +1,23 @@
-# Device tree for Redmi Note 12 Turbo
-
-Redmi Note 12 Turbo (codenamed _"marble"_) is a high-end, mid-range smartphone from Xiaomi.
-
-It was announced & released on March 2023.
-
-## Known issues
-- SELinux allows NEVERALLOWS, because using sysbta.
+# Device tree for the Xiaomi Redmi Pad SE (xun)
 
 ## Device specifications
 
-|                   Basic | Spec Sheet                                                         |
-| ----------------------: | :----------------------------------------------------------------- |
-|                     SoC | Snapdragon® 7 Gen 2 (SM7475)                                       |
-|                     CPU | Octa-core CPU with 1x Cortex-X2 & 3x Cortex-A710 & 4x Cortex-A510  |
-|                     GPU | Adreno 725                                                         |
-|                  Memory | 8/12/16 GB RAM (LPDDR5)                                            |
-| Shipped Android Version | 13.0 with MIUI 14                                                  |
-|                 Storage | 128/256/512/1024 GB (UFS 3.1)                                      |
-|                 Battery | 5000 mAh, non-removable                                            |
-|                 Display | 1080 x 2400 pixels, 20:9 ratio, 6.67 inches, 30/60/90/120 hz, OLED |
-|                  Camera | 64MP (Primary), 8MP (Ultra-wide), 2MP (Macro)                      |
+| Basic                   | Spec                                                           |
+| ----------------------- | :------------------------------------------------------------- |
+| SoC                     | Qualcomm Snapdragon 680 (6nm)                                  |
+| CPU                     | Octa-core (4x2.4 GHz Kryo 265 Gold & 4x1.9 GHz Kryo 265 Silver)|
+| GPU                     | Adreno 610                                                     |
+| Memory                  | 4/6/8GB                                                        |
+| Shipped Android version | 13                                                             |
+| Storage                 | 128/256GB                                                      |
+| MicroSD                 | MicroSDXC                                                      |
+| Battery                 | Non-removable Li-Po 8000 mAh                                   |
+| Dimensions              | 255.5 x 167.1 x 7.4 mm                                         |
+| Display                 | 1200 x 1920 pixels, 11 inches                                  |
+| Rear Camera             | 8 MP, f/2.0, (wide), 1/4", 1.12µm, AF                          |
+| Front Camera            | 5 MP, f/2.2, (ultrawide), 1/5", 1.12µm                         |
 
-![Redmi Note 12 Turbo](https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1679982565.12241762.png)
+
+## Device Picture
+
+![Xiaomi Redmi Pad SE](https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-pad-se-10.jpg)

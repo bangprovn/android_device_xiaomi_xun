@@ -5,6 +5,6 @@
 //
 
 runtime_resource_overlay {
-    name: "SystemUIResMarble",
+    name: "SystemUIResXun",
     product_specific: true,
 }

@@ -5,6 +5,6 @@
 //
 
 runtime_resource_overlay {
-    name: "SettingsResMarble",
+    name: "SettingsResXun",
     product_specific: true,
 }

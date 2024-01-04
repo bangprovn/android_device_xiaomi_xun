@@ -5,7 +5,7 @@
 #
 
 # Inherit from the proprietary version
--include vendor/xiaomi/marble/BoardConfigVendor.mk
+-include vendor/xiaomi/xun/BoardConfigVendor.mk
 
 # A/B
 AB_OTA_UPDATER := true
@@ -26,18 +26,16 @@ AB_OTA_PARTITIONS += \
 
 # Architecture
 TARGET_ARCH := arm64
-TARGET_ARCH_VARIANT := armv8-a-branchprot
+TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := generic
-TARGET_CPU_VARIANT_RUNTIME := kryo300
 
 TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv8-2a
+TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
-TARGET_2ND_CPU_VARIANT := generic
-TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a75
+TARGET_2ND_CPU_VARIANT := cortex-a9
 
 # Boot control
 SOONG_CONFIG_NAMESPACES += ufsbsg
@@ -48,8 +46,7 @@ SOONG_CONFIG_ufsbsg_ufsframework := bsg
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
 # Bootloader
-PRODUCT_PLATFORM := taro
-TARGET_BOOTLOADER_BOARD_NAME := marble
+TARGET_BOOTLOADER_BOARD_NAME := bengal
 TARGET_NO_BOOTLOADER := true
 TARGET_USES_UEFI := true
 
@@ -61,8 +58,8 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 TARGET_SCREEN_DENSITY := 440
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_marble
-TARGET_RECOVERY_DEVICE_MODULES ?= init_xiaomi_marble
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_xun
+TARGET_RECOVERY_DEVICE_MODULES ?= init_xiaomi_xun
 
 # Kernel
 TARGET_KERNEL_ARCH := arm64
@@ -70,8 +67,8 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_BASE := 0x00000000
-BOARD_DTB_SIZE := 5725389
-BOARD_DTB_OFFSET :=0x01F00000
+BOARD_DTB_SIZE := 1013098
+BOARD_DTB_OFFSET := 0x01f00000
 BOARD_KERNEL_OFFSET := 0x00008000
 BOARD_RAMDISK_OFFSET := 0x01000000
 
@@ -80,10 +77,11 @@ BOARD_KERNEL_CMDLINE := \
     disable_dma32=on \
     bootinfo.fingerprint=$(LINEAGE_VERSION) \
     mtdoops.fingerprint=$(LINEAGE_VERSION)
+
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
     androidboot.memcg=1 \
-    androidboot.usbcontroller=a600000.dwc3
+    androidboot.usbcontroller=4e00000.dwc3
 
 BOARD_KERNEL_IMAGE_NAME := Image
 
@@ -120,8 +118,8 @@ BOARD_PARTITION_LIST := $(call to-upper, $(BOARD_QTI_DYNAMIC_PARTITIONS_PARTITIO
 $(foreach p, $(BOARD_PARTITION_LIST), $(eval BOARD_$(p)IMAGE_FILE_SYSTEM_TYPE := erofs))
 $(foreach p, $(BOARD_PARTITION_LIST), $(eval TARGET_COPY_OUT_$(p) := $(call to-lower, $(p))))
 
-BOARD_PREBUILT_ODMIMAGE := vendor/xiaomi/marble/prebuilts/odm.img
-BOARD_PREBUILT_VENDORIMAGE := vendor/xiaomi/marble/prebuilts/vendor.img
+BOARD_PREBUILT_ODMIMAGE := vendor/xiaomi/xun/prebuilts/odm.img
+BOARD_PREBUILT_VENDORIMAGE := vendor/xiaomi/xun/prebuilts/vendor.img
 
 TARGET_COPY_OUT_ODM := odm
 TARGET_COPY_OUT_PRODUCT := product
@@ -134,10 +132,8 @@ BOARD_USES_VENDOR_DLKMIMAGE := true
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := f2fs
 
 # Platform
-TARGET_BOARD_PLATFORM := xiaomi_sm7475
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno725
-QCOM_BOARD_PLATFORMS += xiaomi_sm7475
-BOARD_USES_QCOM_HARDWARE := true
+TARGET_BOARD_PLATFORM := bengal
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno610
 
 # Properties
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/properties/product.prop

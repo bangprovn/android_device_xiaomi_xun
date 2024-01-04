@@ -5,6 +5,6 @@
 //
 
 runtime_resource_overlay {
-    name: "WifiResMarble",
+    name: "FrameworksResXun",
     product_specific: true,
 }

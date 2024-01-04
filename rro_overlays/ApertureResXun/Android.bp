@@ -5,6 +5,6 @@
 //
 
 runtime_resource_overlay {
-    name: "FrameworksResMarble",
+    name: "ApertureResXun",
     product_specific: true,
 }
