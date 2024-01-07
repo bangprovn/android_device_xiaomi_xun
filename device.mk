@@ -103,7 +103,6 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_PACKAGES += \
     ApertureResXun \
-    CarrierConfigResCommon \
     FrameworksResCommon \
     FrameworksResXun \
     SettingsOverlayGlobal \
@@ -113,8 +112,6 @@ PRODUCT_PACKAGES += \
     SettingsResXun \
     SystemUIResCommon \
     SystemUIResXun \
-    TelecommResCommon \
-    TelephonyResCommon \
     WifiResCommon \
     WifiResXun
 
@@ -129,12 +126,6 @@ PRODUCT_PACKAGES += \
 # Properties
 include $(DEVICE_PATH)/configs/properties/default.mk
 
-# RIL
-PRODUCT_PACKAGES += \
-    Ims \
-    QtiTelephony \
-    qti-telephony-common
-
 # Perf
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.3
@@ -147,27 +138,6 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
-
-# Telephony
-PRODUCT_PACKAGES += \
-    extphonelib \
-    extphonelib-product \
-    extphonelib.xml \
-    extphonelib_product.xml \
-    ims-ext-common \
-    ims_ext_common.xml \
-    qti-telephony-hidl-wrapper \
-    qti-telephony-hidl-wrapper-prd \
-    qti_telephony_hidl_wrapper.xml \
-    qti_telephony_hidl_wrapper_prd.xml \
-    qti-telephony-utils \
-    qti-telephony-utils-prd \
-    qti_telephony_utils.xml \
-    qti_telephony_utils_prd.xml \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
 
 # Update engine
 PRODUCT_PACKAGES += \
