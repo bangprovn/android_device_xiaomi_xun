@@ -29,8 +29,7 @@ android_app {
     },
 
     required: [
-        "privapp-permissions_org.lineageos.dt2w.Xun",
-        "xiaomi-touch"
+        "privapp-permissions_org.lineageos.dt2w.Xun"
     ]
 }
 
@@ -39,11 +38,4 @@ prebuilt_etc {
     sub_dir: "permissions",
     src: "privapp-permissions_org.lineageos.dt2w.Xun.xml",
     filename_from_src: true,
-}
-
-cc_binary {
-	name: "xiaomi-touch",
-	srcs: [
-		"xiaomi-touch.cpp",
-	],
 }
