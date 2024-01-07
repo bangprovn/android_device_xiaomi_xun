@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+DEVICE_PATH := device/xiaomi/xun
+KERNEL_PATH := $(DEVICE_PATH)-kernel
+
 # Inherit virtual_ab_ota_product.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/android_t_baseline.mk)
 PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := gz
@@ -22,8 +25,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Project ID Quota.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
-
-DEVICE_PATH := device/xiaomi/xun
 
 # SHIPPING API
 PRODUCT_SHIPPING_API_LEVEL := 31
@@ -68,7 +69,7 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # Dtb
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/prebuilts/dtb:dtb.img
+    $(KERNEL_PATH)/dtb:dtb.img
 
 # DT2W
 PRODUCT_PACKAGES += \
