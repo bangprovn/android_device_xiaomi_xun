@@ -107,9 +107,6 @@ PRODUCT_PACKAGES += \
     ApertureResXun \
     FrameworksResCommon \
     FrameworksResXun \
-    SettingsOverlayGlobal \
-    SettingsOverlayIndia \
-    SettingsOverlayChina \
     SettingsResCommon \
     SettingsResXun \
     SystemUIResCommon \
