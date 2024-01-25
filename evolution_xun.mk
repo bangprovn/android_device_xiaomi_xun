@@ -27,6 +27,6 @@ PRODUCT_MODEL := xun
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="xun_global-user 13 TKQ1.221114.001 V14.0.4.0.TMUMIXM release-keys"
+    PRIVATE_BUILD_DESC="xun-user 13 TKQ1.221114.001 V816.0.3.0.UMUCNXM release-keys"
 
-BUILD_FINGERPRINT := Redmi/xun_global/xun:13/TKQ1.221114.001/V14.0.4.0.TMUMIXM:user/release-keys
+BUILD_FINGERPRINT := Redmi/xun/xun:13/TKQ1.221114.001/V816.0.3.0.UMUCNXM:user/release-keys
