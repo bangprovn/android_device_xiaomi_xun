@@ -66,6 +66,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
 
+# Camera
+PRODUCT_PACKAGES += \
+    GCamGOPrebuilt-V3_8
+
 # Dtb
 PRODUCT_COPY_FILES += \
     $(KERNEL_PATH)/dtb:dtb.img
