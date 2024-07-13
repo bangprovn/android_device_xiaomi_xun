@@ -1,5 +1,4 @@
 type hal_audio_sysbta, domain, coredomain;
-hal_server_domain(hal_audio_sysbta, hal_audio)
 
 type hal_audio_sysbta_exec, exec_type, system_file_type, file_type;
 init_daemon_domain(hal_audio_sysbta)
@@ -8,5 +7,3 @@ hal_client_domain(hal_audio_sysbta, hal_allocator)
 
 # allow audioserver to call hal_audio dump with its own fd to retrieve status
 allow hal_audio_sysbta audioserver:fifo_file write;
-
-allow hal_audio_sysbta vendor_default_prop:file read;
