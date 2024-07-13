@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_xun.mk
+    $(LOCAL_DIR)/lineage_xun.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_xun-eng \
-    evolution_xun-userdebug \
-    evolution_xun-user
+    lineage_xun-eng \
+    lineage_xun-userdebug \
+    lineage_xun-user

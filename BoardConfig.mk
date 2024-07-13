@@ -155,11 +155,13 @@ BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE := true
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
+# Not using Pixel GMS
+TARGET_DISABLE_EPPE := true
+
 # Sepolicy
 include device/qcom/sepolicy/SEPolicy.mk
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
-SELINUX_IGNORE_NEVERALLOWS := true
 
 # Vendor boot
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(wildcard $(KERNEL_PATH)/modules/ramdisk/*.ko)

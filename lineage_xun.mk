@@ -9,7 +9,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
 # Inherit some common Evolution stuff.
-$(call inherit-product, vendor/evolution/config/common_full_tablet_wifionly.mk)
+$(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_USES_PICO_GAPPS := true
 
@@ -18,7 +18,7 @@ $(call inherit-product, device/xiaomi/xun/device.mk)
 
 ## Device identifier
 PRODUCT_DEVICE := xun
-PRODUCT_NAME := evolution_xun
+PRODUCT_NAME := lineage_xun
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := xun
